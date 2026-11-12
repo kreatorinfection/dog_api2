@@ -7,9 +7,9 @@
 }
 
 body {
-    background-color: #f4f4f4;
-    color: #333;
-    padding: 30px;
+    background-color: #f2f2f2;
+    color: #2e2e2e;
+    padding: 35px;
 }
 
 /* Título */
@@ -17,65 +17,67 @@ body {
 h1 {
     text-align: center;
     font-family: Impact, "Arial Narrow", sans-serif;
-    font-size: 55px;
+    font-size: 58px;
     font-weight: normal;
-    letter-spacing: 2px;
-    color: #222;
-    margin-bottom: 35px;
-    transform: scaleY(1.15);
+    letter-spacing: 2.5px;
+    color: #252525;
+    margin-bottom: 40px;
+    transform: scaleY(1.12);
 }
 
 /* Seletores e quantidade */
 
 label {
     display: inline-block;
-    margin: 8px 5px;
+    margin: 10px 6px;
+    color: #444;
 }
 
 select, input {
-    padding: 11px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    background-color: white;
+    padding: 12px;
+    border: 1px solid #d0d0d0;
+    border-radius: 8px;
+    background-color: #fff;
     font-size: 14px;
     outline: none;
-    transition: 0.2s;
+    transition: 0.25s;
 }
 
 select:focus, input:focus {
-    border-color: #555;
-    box-shadow: 0 0 5px #0002;
+    border-color: #777;
+    box-shadow: 0 0 6px #0002;
 }
 
 /* Botões */
 
 button {
-    padding: 11px 18px;
+    padding: 12px 20px;
     border: none;
-    border-radius: 6px;
-    background-color: #333;
-    color: white;
+    border-radius: 8px;
+    background-color: #303030;
+    color: #fff;
     font-size: 14px;
     cursor: pointer;
-    margin: 5px;
-    transition: 0.2s;
+    margin: 6px;
+    transition: 0.25s;
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #505050;
     transform: translateY(-2px);
+    box-shadow: 0 3px 8px #0002;
 }
 
 button:active {
-    transform: scale(0.97);
+    transform: scale(0.96);
 }
 
 /* Mensagem */
 
 #mensagem {
     text-align: center;
-    margin: 25px;
-    color: #666;
+    margin: 28px;
+    color: #707070;
     font-size: 15px;
 }
 
@@ -84,24 +86,24 @@ button:active {
 #galeria {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
-    max-width: 1000px;
-    margin: 25px auto;
+    gap: 24px;
+    max-width: 1050px;
+    margin: 30px auto;
 }
 
 #galeria img {
     width: 100%;
-    height: 230px;
+    height: 240px;
     object-fit: cover;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 0 3px 10px #0002;
-    transition: 0.3s;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 3px 12px #0002;
+    transition: 0.3s ease;
 }
 
 #galeria img:hover {
-    transform: scale(1.03);
-    box-shadow: 0 6px 16px #0003;
+    transform: scale(1.035);
+    box-shadow: 0 7px 18px #0003;
 }
 
 /* Responsividade */
@@ -112,19 +114,19 @@ button:active {
     }
 
     h1 {
-        font-size: 40px;
+        font-size: 42px;
     }
 
     #galeria {
         grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
+        gap: 14px;
     }
 
     #galeria img {
-        height: 160px;
+        height: 165px;
     }
 
     button {
-        padding: 10px 12px;
+        padding: 10px 14px;
     }
 }
